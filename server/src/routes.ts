@@ -55,6 +55,7 @@ router.get("/games/:id/ads", async (req, res) => {
       useVoiceChannel: true,
       hourStart: true,
       hourEnd: true,
+      yearsPlaying: true,
     },
     where: { gameId },
     orderBy: { createdAt: "desc" },
